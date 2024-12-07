@@ -201,6 +201,16 @@ img {
 	padding: 0;
 	width: 100%;
 }
+#body.home div.body-1 {
+	background-color: #383737 !important;
+}
+#body.home div.body-1 h2 {
+	color: #fdfdfd !important;
+	margin-top: 50px !important;
+}
+#body.home div.body-1 p {
+	color: #ffffff !important;
+}
 #body.home div.body div {
 	margin: 0 auto;
 	max-width: 960px;
