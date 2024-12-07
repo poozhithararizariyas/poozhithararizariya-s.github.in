@@ -70,9 +70,9 @@
 				var message = document.getElementById('message').value;
 			
 				// Format the email body and subject
-				var emailBody = 'Name: ' + name + 
-								'Email: ' + email + 
-								'Subject: ' + subject +
+				var emailBody = 'Name: ' + name + ',' +
+								'Email: ' + email + ',' +
+								'Subject: ' + subject + ',' +
 								'Message: ' + message;
 			
 				var mailtoLink = 'mailto:rizariyaspt@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(emailBody);
