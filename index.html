@@ -55,6 +55,49 @@
 				</div>
 			</div>
 		</div>
+		<div id="page">
+			<div id="body" class="contact">
+				<div class="header">
+					<div>
+						<h1>Contact US</h1>
+					</div>
+				</div>
+				<div class="footer">
+					<div class="contact">
+						<h1>INQUIRY FORM</h1>
+						<form id="contactForm">
+							<input type="text" name="Name" id="Name" placeholder="Name" required>
+							<input type="email" name="Email" id="Email" placeholder="Email" required>
+							<input type="text" name="Subject" id="Subject" placeholder="Subject" required>
+							<textarea name="message" id="message" cols="50" rows="7" placeholder="Share your thoughts" required></textarea>
+							<input type="submit" value="Send" id="submit">
+						</form>
+					</div>
+				</div>
+				
+				<script>
+				document.getElementById('contactForm').addEventListener('submit', function(event) {
+					event.preventDefault(); // Prevent the form from submitting in the traditional way
+				
+					// Get form data
+					var name = document.getElementById('Name').value;
+					var email = document.getElementById('Email').value;
+					var subject = document.getElementById('Subject').value;
+					var message = document.getElementById('message').value;
+				
+					// Format the email body and subject
+					var emailBody = 'Name: ' + name + ',' +
+									'Email: ' + email + ',' +
+									'Subject: ' + subject + ',' +
+									'Message: ' + message;
+				
+					var mailtoLink = 'mailto:rizariyaspt@gmail.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(emailBody);
+				
+					// Open the default email client with pre-filled details
+					window.location.href = mailtoLink;
+				});
+				</script>
+		</div>
 		<div id="footer">
 			<div>
 				<p class="collge-name">Name: Poozhithara Riza Riyas</p>
