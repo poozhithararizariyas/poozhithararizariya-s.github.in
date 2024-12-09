@@ -27,5 +27,5 @@ function showStyledWelcomeMessage() {
     // Remove the message after 20 seconds
     setTimeout(() => {
         messageDiv.remove();
-    }, 10000);
+    }, 5000);
 }
